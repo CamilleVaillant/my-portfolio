@@ -5,8 +5,226 @@
   text-decoration: none;
 }
 
-body {
-  background-color: rgb(1, 22, 6);
+@font-face {
+  font-family: "economica";
+  src: url(../font/Economica/Economica-Regular.ttf);
+}
+* {
+  font-family: "economica";
+}
+
+#header {
+  background-image: url(../image/IMG_6799.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 110vh;
+}
+#header h1 {
+  text-align: center;
+  font-size: 6rem;
+  padding-top: 40vh;
+}
+#header h1 .white {
+  color: white;
+  margin-left: 1.5rem;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+.fa-house {
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+
+.title {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 5rem;
+  width: 20rem;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: auto;
+  padding-top: 0.5rem;
+}
+
+#techno {
+  background-image: url(../image/pexels-pawel-l-435199-1121782.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+#techno i {
+  color: white;
+  padding-bottom: 1rem;
+}
+#techno .container-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 2em;
+}
+#techno .container-1 .c1 {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 8rem;
+  width: 20rem;
+  text-align: center;
+  padding-top: 1rem;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin: 2rem auto;
+}
+#techno .container-1 .c2 {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 8rem;
+  width: 20rem;
+  text-align: center;
+  padding-top: 1rem;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin: 2rem auto;
+}
+#techno .container-1 .c3 {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 8rem;
+  width: 20rem;
+  text-align: center;
+  padding-top: 1rem;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin: 2rem auto;
+}
+#techno .container-1 .c4 {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 8rem;
+  width: 20rem;
+  text-align: center;
+  padding-top: 1rem;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin: 2rem auto;
+}
+#techno .container-1 .c5 {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 8rem;
+  width: 20rem;
+  text-align: center;
+  padding-top: 1rem;
+  grid-column: 1/2;
+  grid-row: 3/4;
+  margin: 2rem auto;
+}
+#techno .container-1 .c6 {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 8rem;
+  width: 20rem;
+  text-align: center;
+  padding-top: 1rem;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  margin: 2rem auto;
+}
+
+#projet {
+  background-image: url(../image/pexels-sebastian-988914.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding-bottom: 4rem;
+}
+#projet i {
+  color: white;
+}
+#projet .container-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 3em;
+  text-align: end;
+}
+#projet .container-2 .p1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin-right: 3rem;
+}
+#projet .container-2 .p1 a {
+  display: inline-block;
+}
+#projet .container-2 .p1 a div {
+  background-image: url(../image/ohm-sweet-ohm.png);
+  background-position: center;
+  background-size: cover;
+  width: 30rem;
+  height: 15rem;
+}
+#projet .container-2 .p2 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin-right: 3rem;
+}
+#projet .container-2 .p2 a {
+  display: inline-block;
+}
+#projet .container-2 .p2 a div {
+  background-image: url(../image/tinker.png);
+  background-position: center;
+  background-size: cover;
+  width: 30rem;
+  height: 15rem;
+}
+#projet .container-2 .p3 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  margin-right: 3rem;
+}
+#projet .container-2 .p3 a {
+  display: inline-block;
+}
+#projet .container-2 .p3 a div {
+  background-image: url(../image/gaming-campus.png);
+  background-position: center;
+  background-size: cover;
+  width: 30rem;
+  height: 15rem;
+}
+
+#a-propos {
+  background-image: url(../image/pexels-eberhardgross-26853148\ \(1\).jpg);
+  background-position: center;
+  background-size: cover;
+}
+#a-propos i {
+  color: black;
+}
+#a-propos .title-2 {
+  background-color: rgba(217, 217, 217, 0.5);
+  height: 5rem;
+  width: 20rem;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: auto;
+  padding-top: 0.5rem;
+}
+#a-propos .moi div {
+  background-color: rgba(217, 217, 217, 0.5);
+  width: 500px;
+  height: 350px;
+  margin: auto;
+  margin-top: 5rem;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  padding: 1rem;
+}
+#a-propos .moi ul {
+  display: flex;
+  justify-content: center;
+}
+#a-propos .moi ul li {
+  margin: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

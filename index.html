@@ -11,23 +11,33 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon my logo/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="MyWebSite" />
     <link rel="manifest" href="assets/favicon my logo/site.webmanifest" />
+    <script src="assets/style.js" defer></script>
     <title>Camille Vaillant</title>
 </head>
 <body>
 
             <!-- page d'accueil -->
 
-    <header>
-        <h1>VAILLANT <span class="white">CAMILLE</span></h1>
-        <select name="page" id="page-select">
-            <option value=""></option>
-            <option value="moi">MOI</option>
-            <option value="loisir">LOISIR</option>
-            <option value="contact">CONTACT</option>
-            <option value="technologie">TECHNOLOGIE</option>
-            <option value="projet">PROJET</option>
-            <option value="parcour">PARCOUR</option>
-        </select>
+    <header id="header">
+        <h1>VAILLANT<span class="white">CAMILLE</span></h1>
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">×</a>
+            <ul>
+              <li><a href="#techno">TECHNOLOGIE</a></li>
+              <li><a href="#projet">PROJET</a></li>
+              <li><a href="#a-propos">MOI</a></li>
+              <li><a href="#form">CONTACT</a></li>
+            </ul>
+        </div>
+          
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+        </a>
+          
     </header>
     <main>
 
@@ -35,36 +45,36 @@
 
 
         <section id="techno">
-            <a href=""><img src="" alt=""></a>
-            <div><h2>technologie</h2></div>
+            <a href="#header"><i class="fa-solid fa-2x fa-house"></i></a>
+            <div class="title"><h2>technologie</h2></div>
             <div class="container-1">
                 <article class="c1">
-                    <img src="" alt="logo html 5">
+                    <a href=""><i class="fa-brands fa-2x fa-html5"></i></a>
                     <h3>html 5</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, voluptatum!</p>
                 </article>
                 <article class="c2">
-                    <img src="" alt="logo github">
+                    <a href=""><i class="fa-brands fa-2x fa-github"></i></a>
                     <h3>githhub</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, voluptatum!</p>
                 </article>
                 <article class="c3">
-                    <img src="" alt="logo node js">
+                    <a href=""><i class="fa-brands fa-2x fa-node-js"></i></a>
                     <h3>node js</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, voluptatum!</p>
                 </article>
                 <article class="c4">
-                    <img src="" alt="logo figma">
+                    <a href=""><i class="fa-brands fa-2x fa-figma"></i></a>
                     <h3>figma</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, voluptatum!</p>
                 </article>
                 <article class="c5">
-                    <img src="" alt="logo tailwind">
+                    <a href=""><i class="fa-solid fa-2x fa-jedi"></i></a>
                     <h3>tailwind</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, voluptatum!</p>
                 </article>
                 <article class="c6">
-                    <img src="" alt="logo sass">
+                    <a href=""><i class="fa-brands fa-2x fa-sass"></i></a>
                     <h3>sass</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, voluptatum!</p>
                 </article>
@@ -75,17 +85,17 @@
             <!-- partie projet -->
 
         <section id="projet">
-            <a href=""><img src="" alt=""></a>
-            <div><h2>projet</h2></div>
+            <a href="#header"><i class="fa-solid fa-2x fa-house"></i></a>
+            <div class="title"><h2>projet</h2></div>
             <div class="container-2">
                 <article class="p1">
-                    <a href=""><img src="" alt="ohm sweet ohm"></a>
+                    <a href=""><div></div></a>
                 </article>
                 <article class="p2">
-                    <a href=""><img src="" alt="Tinker"></a>
+                    <a href=""><div></div></a>
                 </article>
                 <article class="p3">
-                    <a href=""><img src="" alt="gaming campus"></a>
+                    <a href=""><div></div></a>
                 </article>
             </div>
         </section>
@@ -95,10 +105,47 @@
 
 
         <section id="a-propos">
-            <a href=""><img src="" alt=""></a>
-            <div><h2>a propos</h2></div>
+            <a href="#header"><i class="fa-solid fa-2x fa-house"></i></a>
+            <div class="title-2"><h2>a propos</h2></div>
             <article class="moi">
-                
+                <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis ex error quae. Consequatur temporibus assumenda architecto sequi aperiam ipsum velit earum ut, voluptas corporis obcaecati nesciunt, ea neque praesentium magnam? Saepe qui eum iusto corporis, dignissimos magnam nisi, hic, natus reiciendis aperiam quos animi doloremque tempore expedita ullam? Reprehenderit, laborum!</p></div>
+                <ul>
+                    <li><a href=""><i class="fa-brands fa-2x fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-2x fa-linkedin"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-2x fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-2x fa-whatsapp"></i></a></li> 
+                </ul>
+            </article>
+        </section>
+
+
+
+                    <!-- formulaire -->
+
+
+        <section id="form">
+            <a href="#header"><i class="fa-solid fa-2x fa-house"></i></a>
+            <div><h2>formulaire de contact</h2></div>
+            <article>
+                <form action="/ma-page-de-traitement" method="post">
+                    <ul>
+                      <li>
+                        <label for="name">Nom&nbsp;:</label>
+                        <input type="text" id="name" name="user_name" />
+                      </li>
+                      <li>
+                        <label for="mail">E-mail&nbsp;:</label>
+                        <input type="email" id="mail" name="user_email" />
+                      </li>
+                      <li>
+                        <label for="msg">Message&nbsp;:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                      </li>
+                    </ul>
+                    <div class="button">
+                        <button type="submit">Envoyer le message</button>
+                      </div>                      
+                  </form>
             </article>
         </section>
     </main>
