@@ -30,6 +30,7 @@ html {
   /* Bouton de fermeture */
 }
 #header h1 {
+  color: white;
   text-align: center;
   font-size: 6rem;
   padding-top: 40vh;
