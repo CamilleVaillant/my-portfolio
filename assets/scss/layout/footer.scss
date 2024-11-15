@@ -1,0 +1,31 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+footer{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    div{
+        display: inline-block;
+        background-image: url(../image/logo.png);
+        background-position: center;
+        background-size: cover;
+        width: 6rem;
+        height: 6rem;
+        transition: transform 0.3s linear, box-shadow 0.3s linear;
+        overflow: hidden;
+    }
+    div:hover{
+        transform: scale(1.1);
+    }
+    p{
+        font-size: 1.5rem;
+        transition: transform 0.3s linear, box-shadow 0.3s linear;
+        overflow: hidden;
+    }
+    p:hover{
+        transform:scale(1.1)
+    }
+}

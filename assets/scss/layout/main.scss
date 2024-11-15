@@ -1,3 +1,8 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
 h2{
     text-transform: uppercase;
 }
@@ -17,6 +22,7 @@ h3{
     text-align: center;
     margin: auto;
     padding-top: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -29,6 +35,10 @@ h3{
     i{
         color: white;
         padding-bottom: 1rem;
+        transition: linear 0.3s;
+    }
+    i:hover{
+        transform: scale(1.5);
     }
    
     .container-1{
@@ -37,6 +47,9 @@ h3{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         gap: 2em;
+        i:hover{
+            font-size: 2.5rem
+        }
         
         .c1{
             background-color: rgba(0, 0, 0, 0.5);
@@ -113,6 +126,11 @@ h3{
     padding-bottom: 4rem;
     i{
         color: white;
+        transition: linear 0.3s;
+    }
+    i:hover{
+        color: black;
+        transform: scale(1.5);
     }
     .container-2{
         display: grid;
@@ -125,6 +143,7 @@ h3{
             grid-column: 1 / 2;
             grid-row: 1 / 2;
             margin-right: 3rem;
+            
             a{
                 display: inline-block;
                 div{
@@ -133,6 +152,13 @@ h3{
                     background-size: cover;
                     width: 30rem;
                     height: 15rem;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    transition: transform 0.3s linear, box-shadow 0.3s linear;
+                    overflow: hidden;
+                }
+                div:hover{
+                    transform: scale(1.1);
+                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
                 }
             }
         }
@@ -148,7 +174,14 @@ h3{
                     background-size: cover;
                     width: 30rem;
                     height: 15rem;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    transition: transform 0.3s linear, box-shadow 0.3s linear;
+                    overflow: hidden;
                     
+                }
+                div:hover{
+                    transform: scale(1.1);
+                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
                 }
             }
         }
@@ -163,8 +196,14 @@ h3{
                     background-position: center;
                     background-size: cover;
                     width: 30rem;
-                    height: 15rem;
+                    height: 15rem;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    transition: transform 0.3s linear, box-shadow 0.3s linear;
+                    overflow: hidden;
                     
+                }
+                div:hover{
+                    transform: scale(1.1);
+                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
                 }
             }
         }
@@ -178,6 +217,10 @@ h3{
     background-size: cover;
     i{
         color: black;
+        transition: linear 0.3s;
+    }
+    i:hover{
+        transform: scale(1.5);
     }
     .title-2{
         background-color: rgba(217, 217, 217, 0.5);
@@ -206,6 +249,93 @@ h3{
             li{
                 margin: 2rem;
             }
+        }
+    }
+}
+
+
+#form{
+    background-image: url(../image/pexels-manuela-adler-344311-949194.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 2rem;
+    i{
+        color: black;
+        transition: linear 0.3s;
+    }
+    i:hover{
+        color: white;
+        transform: scale(1.5);
+    }
+    .title-2{
+        background-color: rgba(217, 217, 217, 0.5);
+        height: 5rem;
+        width: 40rem;
+        font-size: 2.5rem;
+        text-align: center;
+        margin: auto;
+        padding-top: 0.5rem;
+    }
+    .form{
+        background-color: rgba(217, 217, 217, 0.5);
+        width: 500px;
+        height: auto;
+        margin: auto;
+        margin-top: 5rem;
+        font-size: 1.5rem;
+        line-height: 3rem;
+        padding: 1rem;
+        text-align: center;
+        
+       
+        #name{
+            background-color: rgba(217, 217, 217, 0.5);
+            border: none;
+            width: 15rem;
+            height: 2rem;
+            font-size: 1.5rem;
+            text-align: center;
+            margin: auto;
+        }
+        #mail{
+            background-color: rgba(217, 217, 217, 0.5);
+            border: none;
+            width: 15rem;
+            height: 2rem;
+            font-size: 1.5rem;
+        }
+        #msg{
+            background-color: rgba(217, 217, 217, 0.5);
+            border: none;
+            width: 20rem;
+            height: 15rem;
+            font-size: 1.5rem;
+        }
+        label{
+            display: block;
+        }
+        .button{
+            display: flex;
+            justify-content: center; /* Centre le bouton */
+            margin-top: 10px;
+        }
+        #submit-button {
+            background-color: rgba(217, 217, 217, 0.5);
+            color: black;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+           
+            cursor: pointer;
+            transition: background-color 0.3s linear;
+        }
+        #submit-button:hover {
+            background-color:rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+        #submit-button:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
         }
     }
 }

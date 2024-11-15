@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -13,11 +14,20 @@
   font-family: "economica";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #header {
   background-image: url(../image/IMG_6799.jpeg);
   background-position: center;
   background-size: cover;
   height: 110vh;
+  /* Bouton burger */
+  /* Menu latéral */
+  /* Afficher le menu */
+  /* Liens du menu */
+  /* Bouton de fermeture */
 }
 #header h1 {
   text-align: center;
@@ -27,6 +37,51 @@
 #header h1 .white {
   color: white;
   margin-left: 1.5rem;
+}
+#header #burger {
+  cursor: pointer;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  width: 50px;
+  height: 50px;
+}
+#header .sidenav {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Caché par défaut */
+  width: 250px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.3s;
+}
+#header .sidenav.open {
+  left: 0;
+}
+#header .sidenav a {
+  padding: 30px 20px;
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+  display: block;
+}
+#header .sidenav a:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+#header .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 h2 {
@@ -50,6 +105,7 @@ h3 {
   text-align: center;
   margin: auto;
   padding-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 #techno {
@@ -61,12 +117,19 @@ h3 {
 #techno i {
   color: white;
   padding-bottom: 1rem;
+  transition: linear 0.3s;
+}
+#techno i:hover {
+  transform: scale(1.5);
 }
 #techno .container-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 2em;
+}
+#techno .container-1 i:hover {
+  font-size: 2.5rem;
 }
 #techno .container-1 .c1 {
   background-color: rgba(0, 0, 0, 0.5);
@@ -138,6 +201,11 @@ h3 {
 }
 #projet i {
   color: white;
+  transition: linear 0.3s;
+}
+#projet i:hover {
+  color: black;
+  transform: scale(1.5);
 }
 #projet .container-2 {
   display: grid;
@@ -160,6 +228,13 @@ h3 {
   background-size: cover;
   width: 30rem;
   height: 15rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s linear, box-shadow 0.3s linear;
+  overflow: hidden;
+}
+#projet .container-2 .p1 a div:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 #projet .container-2 .p2 {
   grid-column: 1/2;
@@ -175,6 +250,13 @@ h3 {
   background-size: cover;
   width: 30rem;
   height: 15rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s linear, box-shadow 0.3s linear;
+  overflow: hidden;
+}
+#projet .container-2 .p2 a div:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 #projet .container-2 .p3 {
   grid-column: 1/2;
@@ -190,6 +272,13 @@ h3 {
   background-size: cover;
   width: 30rem;
   height: 15rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s linear, box-shadow 0.3s linear;
+  overflow: hidden;
+}
+#projet .container-2 .p3 a div:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
 #a-propos {
@@ -199,6 +288,10 @@ h3 {
 }
 #a-propos i {
   color: black;
+  transition: linear 0.3s;
+}
+#a-propos i:hover {
+  transform: scale(1.5);
 }
 #a-propos .title-2 {
   background-color: rgba(217, 217, 217, 0.5);
@@ -225,6 +318,193 @@ h3 {
 }
 #a-propos .moi ul li {
   margin: 2rem;
+}
+
+#form {
+  background-image: url(../image/pexels-manuela-adler-344311-949194.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 2rem;
+}
+#form i {
+  color: black;
+  transition: linear 0.3s;
+}
+#form i:hover {
+  color: white;
+  transform: scale(1.5);
+}
+#form .title-2 {
+  background-color: rgba(217, 217, 217, 0.5);
+  height: 5rem;
+  width: 40rem;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: auto;
+  padding-top: 0.5rem;
+}
+#form .form {
+  background-color: rgba(217, 217, 217, 0.5);
+  width: 500px;
+  height: auto;
+  margin: auto;
+  margin-top: 5rem;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  padding: 1rem;
+  text-align: center;
+}
+#form .form #name {
+  background-color: rgba(217, 217, 217, 0.5);
+  border: none;
+  width: 15rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: auto;
+}
+#form .form #mail {
+  background-color: rgba(217, 217, 217, 0.5);
+  border: none;
+  width: 15rem;
+  height: 2rem;
+  font-size: 1.5rem;
+}
+#form .form #msg {
+  background-color: rgba(217, 217, 217, 0.5);
+  border: none;
+  width: 20rem;
+  height: 15rem;
+  font-size: 1.5rem;
+}
+#form .form label {
+  display: block;
+}
+#form .form .button {
+  display: flex;
+  justify-content: center; /* Centre le bouton */
+  margin-top: 10px;
+}
+#form .form #submit-button {
+  background-color: rgba(217, 217, 217, 0.5);
+  color: black;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s linear;
+}
+#form .form #submit-button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+#form .form #submit-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+footer div {
+  display: inline-block;
+  background-image: url(../image/logo.png);
+  background-position: center;
+  background-size: cover;
+  width: 6rem;
+  height: 6rem;
+  transition: transform 0.3s linear, box-shadow 0.3s linear;
+  overflow: hidden;
+}
+footer div:hover {
+  transform: scale(1.1);
+}
+footer p {
+  font-size: 1.5rem;
+  transition: transform 0.3s linear, box-shadow 0.3s linear;
+  overflow: hidden;
+}
+footer p:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 675px) {
+  #techno .container-1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 2em;
+  }
+  #techno .container-1 .c1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  #techno .container-1 .c2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  #techno .container-1 .c3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  #techno .container-1 .c4 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  #techno .container-1 .c5 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  #techno .container-1 .c6 {
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+}
+@media screen and (max-width: 625px) {
+  #header h1 {
+    font-size: 4rem;
+  }
+  #a-propos .moi div {
+    width: auto;
+    height: auto;
+  }
+  #a-propos .moi ul {
+    flex-wrap: wrap;
+  }
+  #form .title-2 {
+    width: auto;
+    height: auto;
+  }
+  #form .form {
+    width: auto;
+  }
+}
+@media screen and (max-width: 492px) {
+  #projet .container-2 {
+    text-align: center;
+  }
+  #projet .container-2 .p1 a div {
+    width: 20rem;
+    height: 10rem;
+  }
+  #projet .container-2 .p2 a div {
+    width: 20rem;
+    height: 10rem;
+  }
+  #projet .container-2 .p3 a div {
+    width: 20rem;
+    height: 10rem;
+  }
+}
+@media screen and (max-width: 391px) {
+  #header h1 {
+    font-size: 3rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

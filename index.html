@@ -19,24 +19,20 @@
             <!-- page d'accueil -->
 
     <header id="header">
+        <i class="fa-solid fa-4x fa-bars" alt="Menu" id="burger"></i>
         <h1>VAILLANT<span class="white">CAMILLE</span></h1>
+        
+
+        <!-- Menu déroulant latéral -->
         <div id="mySidenav" class="sidenav">
-            <a id="closeBtn" href="#" class="close">×</a>
-            <ul>
-              <li><a href="#techno">TECHNOLOGIE</a></li>
-              <li><a href="#projet">PROJET</a></li>
-              <li><a href="#a-propos">MOI</a></li>
-              <li><a href="#form">CONTACT</a></li>
-            </ul>
+            <a href="javascript:void(0)" class="close-btn" id="closeBtn">×</a> 
+            <a href="#techno">TECHNOLOGIE</a>
+            <a href="#projet">PROJET</a>
+            <a href="#a-propos">MOI</a>
+            <a href="#form">CONTACT</a>
+            <a href="#bisous">BISOUS</a>
         </div>
           
-        <a href="#" id="openBtn">
-            <span class="burger-icon">
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
-        </a>
           
     </header>
     <main>
@@ -45,7 +41,7 @@
 
 
         <section id="techno">
-            <a href="#header"><i class="fa-solid fa-2x fa-house"></i></a>
+            <a href="#header" id="backToTop" class="back-to-top"><i class="fa-solid fa-2x fa-house"></i></a>
             <div class="title"><h2>technologie</h2></div>
             <div class="container-1">
                 <article class="c1">
@@ -85,7 +81,7 @@
             <!-- partie projet -->
 
         <section id="projet">
-            <a href="#header"><i class="fa-solid fa-2x fa-house"></i></a>
+            <a href="#header" id="backToTop" class="back-to-top"><i class="fa-solid fa-2x fa-house"></i></a>
             <div class="title"><h2>projet</h2></div>
             <div class="container-2">
                 <article class="p1">
@@ -105,7 +101,7 @@
 
 
         <section id="a-propos">
-            <a href="#header"><i class="fa-solid fa-2x fa-house"></i></a>
+            <a href="#header" id="backToTop" class="back-to-top"><i class="fa-solid fa-2x fa-house"></i></a>
             <div class="title-2"><h2>a propos</h2></div>
             <article class="moi">
                 <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis ex error quae. Consequatur temporibus assumenda architecto sequi aperiam ipsum velit earum ut, voluptas corporis obcaecati nesciunt, ea neque praesentium magnam? Saepe qui eum iusto corporis, dignissimos magnam nisi, hic, natus reiciendis aperiam quos animi doloremque tempore expedita ullam? Reprehenderit, laborum!</p></div>
@@ -124,9 +120,9 @@
 
 
         <section id="form">
-            <a href="#header"><i class="fa-solid fa-2x fa-house"></i></a>
-            <div><h2>formulaire de contact</h2></div>
-            <article>
+            <a href="#header" id="backToTop" class="back-to-top"><i class="fa-solid fa-2x fa-house"></i></a>
+            <div class="title-2"><h2>formulaire de contact</h2></div>
+            <article class="form">
                 <form action="/ma-page-de-traitement" method="post">
                     <ul>
                       <li>
@@ -143,11 +139,18 @@
                       </li>
                     </ul>
                     <div class="button">
-                        <button type="submit">Envoyer le message</button>
+                        <button type="submit" id="submit-button">Envoyer le message</button>
                       </div>                      
                   </form>
             </article>
         </section>
+
+
+        <footer id="bisous">
+           <a href="#header" id="backToTop" class="back-to-top"><div></div></a>
+           <p>Merci d'avoir passer du temps part ici. A bientôt.</p>
+           <p>BISOUS</p>
+        </footer>
     </main>
 </body>
 </html>
