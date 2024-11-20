@@ -19,7 +19,7 @@ html {
 }
 
 #header {
-  background-image: url(../image/IMG_6799.jpeg);
+  background-image: url(../image/img_6799.jpeg);
   background-position: center;
   background-size: cover;
   height: 110vh;
@@ -286,6 +286,7 @@ h3 {
   background-image: url(../image/pexels-eberhardgross-26853148\ \(1\).jpg);
   background-position: center;
   background-size: cover;
+  height: 100vh;
 }
 #a-propos i {
   color: black;
@@ -326,9 +327,10 @@ h3 {
   background-position: center;
   background-size: cover;
   padding-bottom: 2rem;
+  height: 100vh;
 }
 #form i {
-  color: black;
+  color: white;
   transition: linear 0.3s;
 }
 #form i:hover {

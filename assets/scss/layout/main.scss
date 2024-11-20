@@ -215,6 +215,7 @@ h3{
     background-image: url(../image/pexels-eberhardgross-26853148\ \(1\).jpg);
     background-position: center;
     background-size: cover;
+    height: 100vh;
     i{
         color: black;
         transition: linear 0.3s;
@@ -259,8 +260,9 @@ h3{
     background-position: center;
     background-size: cover;
     padding-bottom: 2rem;
+    height: 100vh;
     i{
-        color: black;
+        color: white;
         transition: linear 0.3s;
     }
     i:hover{
